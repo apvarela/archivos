@@ -45,6 +45,9 @@
 
   <script>
     const schedule = [
+    // OPCIONAL por fila: agregue "photo1" y/o "photo2" con URL completa para forzar foto específica.
+    // Ejemplo: "photo1": "https://images.squarespace-cdn.com/.../spk_Gabriel_Castro_Alvarado.jpg",
+
   {
     "type": "day",
     "title": "Martes 28 de Abril",
@@ -1515,7 +1518,8 @@
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;');
 
-    const getPhoto = (speaker = '') => {
+    const getPhoto = (speaker = '', explicitPhoto = '') => {
+      if (explicitPhoto && /^https?:\/\//i.test(explicitPhoto)) return explicitPhoto;
       const clean = speaker.replace(/^Dra?\.?\s*/, '').split(',')[0].trim();
       const key = aliases[clean] || clean;
       return photos[key] || fallback;
@@ -1558,15 +1562,15 @@
           if (row.track2) {
             html += `<tr>
               <td class="time">${esc(row.time || '')}</td>
-              <td class="speaker-cell"><img class="avatar" src="${getPhoto(row.speaker1)}" alt="${esc(row.speaker1 || 'Conferencista')}"></td>
+              <td class="speaker-cell"><img class="avatar" src="${getPhoto(row.speaker1, row.photo1)}" alt="${esc(row.speaker1 || 'Conferencista')}"></td>
               <td class="content">${esc(row.title1 || row.track1 || '')}${speakerHtml(row.speaker1)}</td>
-              <td class="speaker-cell"><img class="avatar" src="${getPhoto(row.speaker2)}" alt="${esc(row.speaker2 || 'Conferencista')}"></td>
+              <td class="speaker-cell"><img class="avatar" src="${getPhoto(row.speaker2, row.photo2)}" alt="${esc(row.speaker2 || 'Conferencista')}"></td>
               <td class="content">${esc(row.title2 || row.track2 || '')}${speakerHtml(row.speaker2)}</td>
             </tr>`;
           } else {
             html += `<tr>
               <td class="time">${esc(row.time || '')}</td>
-              <td class="speaker-cell"><img class="avatar" src="${getPhoto(row.speaker1)}" alt="${esc(row.speaker1 || 'Conferencista')}"></td>
+              <td class="speaker-cell"><img class="avatar" src="${getPhoto(row.speaker1, row.photo1)}" alt="${esc(row.speaker1 || 'Conferencista')}"></td>
               <td class="content">${esc(row.title1 || row.track1 || '')}${speakerHtml(row.speaker1)}</td>
             </tr>`;
           }
