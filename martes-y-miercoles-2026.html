@@ -4,46 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Martes y Miércoles - Programa CELA 2026</title>
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;background:#f2f2f2;color:#222;margin:0}
-    .container{max-width:1400px;margin:16px auto;padding:0 10px}
-    .day{margin-bottom:18px;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px #d5d5d5 inset}
-    .day-title{background:#a8b7cb;text-align:center;font-size:40px;font-weight:700;padding:16px 10px}
-    .section-title{background:#fff;color:#2b6fb7;text-align:center;font-size:28px;font-weight:700;padding:14px 12px;border-top:1px solid #dedede}
-    .moderator{background:#dcdcdc;text-align:center;font-size:17px;font-weight:700;padding:12px;border-top:1px solid #d0d0d0}
-    .table{width:100%;border-collapse:collapse;table-layout:fixed}
-    .table td{border-top:1px solid #d0d0d0;background:#ececec;vertical-align:middle}
-    .time{width:140px;text-align:center;font-weight:700;color:#3c4b59;font-size:18px;padding:24px 8px}
-    .speaker-cell{width:92px;text-align:center;padding:10px 8px;border-left:1px solid #d0d0d0}
-    .avatar{width:66px;height:66px;border-radius:50%;object-fit:cover;border:2px solid #36a79d;background:#7e99a0}
-    .content{padding:14px 16px;font-size:18px;font-weight:700;border-left:1px solid #d0d0d0}.content.centered{text-align:center}
-    .speaker-line{display:flex;align-items:center;gap:8px;margin-top:8px;color:#46ad9f;font-size:17px;font-weight:700;line-height:1.2}
-    .speaker-line img{width:26px;height:auto;display:inline-block}
-    .dual-header{display:grid;grid-template-columns:140px 1fr 1fr;background:#fff;color:#2b6fb7;border-top:1px solid #dedede}
-    .dual-header div{text-align:center;padding:14px 10px;font-size:26px;font-weight:700}
-    .dual-header div:first-child{padding:0}
-    @media (max-width:900px){
-      .day-title{font-size:30px}
-      .section-title{font-size:22px}
-      .content{font-size:16px}
-      .speaker-line{font-size:15px}
-      .dual-header{grid-template-columns:110px 1fr 1fr}
-      .dual-header div{font-size:20px}
+  <style>.cela-program {font-family:Arial,Helvetica,sans-serif;background:#f2f2f2;color:#222;margin:0}.cela-program .container {max-width:1400px;margin:16px auto;padding:0 10px}.cela-program .day {margin-bottom:18px;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px #d5d5d5 inset}.cela-program .day-title {background:#a8b7cb;text-align:center;font-size:40px;font-weight:700;padding:16px 10px}.cela-program .section-title {background:#fff;color:#2b6fb7;text-align:center;font-size:28px;font-weight:700;padding:14px 12px;border-top:1px solid #dedede}.cela-program .moderator {background:#dcdcdc;text-align:center;font-size:17px;font-weight:700;padding:12px;border-top:1px solid #d0d0d0}.cela-program .table {width:100%;border-collapse:collapse;table-layout:fixed}.cela-program .table td {border-top:1px solid #d0d0d0;background:#ececec;vertical-align:middle}.cela-program .time {width:140px;text-align:center;font-weight:700;color:#3c4b59;font-size:18px;padding:24px 8px}.cela-program .speaker-cell {width:92px;text-align:center;padding:10px 8px;border-left:1px solid #d0d0d0}.cela-program .avatar {width:66px;height:66px;border-radius:50%;object-fit:cover;border:2px solid #36a79d;background:#7e99a0}.cela-program .content {padding:14px 16px;font-size:18px;font-weight:700;border-left:1px solid #d0d0d0}.cela-program .content.centered {text-align:center}.cela-program .speaker-line {display:flex;align-items:center;gap:8px;margin-top:8px;color:#46ad9f;font-size:17px;font-weight:700;line-height:1.2}.cela-program .speaker-line img {width:26px;height:auto;display:inline-block}.cela-program .dual-header {display:grid;grid-template-columns:140px 1fr 1fr;background:#fff;color:#2b6fb7;border-top:1px solid #dedede}.cela-program .dual-header div {text-align:center;padding:14px 10px;font-size:26px;font-weight:700}.cela-program .dual-header div:first-child {padding:0}
+    @media (max-width:900px){.cela-program .day-title {font-size:30px}.cela-program .section-title {font-size:22px}.cela-program .content {font-size:16px}.cela-program .speaker-line {font-size:15px}.cela-program .dual-header {grid-template-columns:110px 1fr 1fr}.cela-program .dual-header div {font-size:20px}
     }
-    @media (max-width:720px){
-      .table,.table tbody,.table tr,.table td{display:block;width:100%}
-      .time{width:auto;padding:12px}
-      .speaker-cell{display:inline-block;width:80px;border:none}
-      .content{display:inline-block;width:calc(100% - 90px);border:none;padding:12px}
-      .table tr{border-top:1px solid #d0d0d0}
-      .dual-header{grid-template-columns:1fr 1fr 1fr}
+    @media (max-width:720px){.cela-program .table, .cela-program .table tbody, .cela-program .table tr, .cela-program .table td {display:block;width:100%}.cela-program .time {width:auto;padding:12px}.cela-program .speaker-cell {display:inline-block;width:80px;border:none}.cela-program .content {display:inline-block;width:calc(100% - 90px);border:none;padding:12px}.cela-program .table tr {border-top:1px solid #d0d0d0}.cela-program .dual-header {grid-template-columns:1fr 1fr 1fr}
     }
   </style>
 </head>
 <body>
+  <div class="cela-program">
   <div class="container" id="app"></div>
 
   <script>
+(() => {
     const schedule = [
   {
     "type": "day",
@@ -960,6 +933,9 @@
       html += '</section>';
       app.insertAdjacentHTML('beforeend', html);
     }
-  </script>
+  
+})();
+</script>
+  </div>
 </body>
 </html>
