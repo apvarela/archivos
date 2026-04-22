@@ -5,345 +5,842 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programa Miércoles - CELA Costa Rica 2026</title>
   <style>
-    :root { --text:#1f2937; --muted:#4b5563; --line:#d1d5db; --head:#e0e7ff; --bg:#f8fafc; }
-    body { font-family: Arial, sans-serif; margin: 20px; color: var(--text); background: var(--bg); }
-    h1 { margin: 0 0 6px; }
-    .subtitle { color: var(--muted); margin: 0 0 14px; }
-    table { width: 100%; border-collapse: collapse; background: #fff; }
-    th, td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
-    th { background: #f3f4f6; text-align: left; }
-    .time { width: 18%; white-space: nowrap; }
-    tr.section td { background: var(--head); font-weight: 700; }
+    :root { --bg:#0b1220; --panel:#121a2b; --panel-2:#1b253c; --text:#e5e7eb; --muted:#9ca3af; --line:#2b3652; --accent:#66d9ef; --accent-2:#8b5cf6; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, Arial, sans-serif; background: radial-gradient(circle at top right, #1f2a44, var(--bg) 45%); color: var(--text); }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 24px; }
+    .hero { background: linear-gradient(120deg, rgba(102,217,239,.16), rgba(139,92,246,.16)); border:1px solid var(--line); border-radius:16px; padding:20px; margin-bottom:16px; }
+    .hero h1 { margin:0 0 6px; font-size: clamp(1.2rem, 2.8vw, 2rem); }
+    .hero p { margin:0; color: var(--muted); }
+    table { width:100%; border-collapse:separate; border-spacing:0 10px; }
+    th { text-align:left; color:var(--muted); font-weight:600; padding:0 12px 6px; }
+    td { background: var(--panel); border:1px solid var(--line); padding:10px 12px; vertical-align: top; }
+    td.time { width:120px; color:#bfdbfe; font-weight:700; border-radius:10px 0 0 10px; }
+    td.activity { border-left:0; border-radius:0 10px 10px 0; }
+    tr.section td { background: var(--panel-2); color:#dbeafe; font-weight:700; border-radius:10px; }
+    .talk-title { font-weight:600; color:#f3f4f6; margin-bottom:6px; }
+    .speaker { display:flex; align-items:center; gap:10px; color:#cbd5e1; font-size:.95rem; }
+    .speaker-photo { width:34px; height:34px; border-radius:50%; object-fit:cover; border:1px solid #334155; background:#0f172a; }
+    .speaker-fallback { width:34px; height:34px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; background:#1f2937; border:1px solid #334155; font-size:.75rem; font-weight:700; color:#93c5fd; }
+    .speaker-meta { line-height:1.25; }
   </style>
 </head>
 <body>
-  <h1>Programa - Miércoles 29 de Abril 2026</h1>
-  <p class="subtitle">Sala REAL 1</p>
-  <table>
-    <thead><tr><th>Hora</th><th>Actividad</th></tr></thead>
-    <tbody>
-      <tr class="section"><td colspan="2">Miércoles 29 de Abril 2026</td></tr>
-      <tr class="section"><td colspan="2">Sesión I: Apertura Congreso</td></tr>
-      <tr class="section"><td colspan="2">Moderador: Dr. Pierre Galvagni, Brasil y Dr.Jesus Porras, Costa Rica</td></tr>
-      <tr>
-        <td class="time">07:40 – 07:45</td>
-        <td>Historia de la cirugía vascular en Costa Rica y el futuro - Dr. Gabriel Castro, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">07:46 – 07:51</td>
-        <td>Estados actual de la medicina y cirugia en costa rica - Dr. Eliott Garita, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">07:52 – 07:57</td>
-        <td>Apertura Congreso ,Presente y futuro de CELA - Dr. Pierre Galvagni, Brasil</td>
-      </tr>
-      <tr class="section"><td colspan="2">Sesión II: MASTER CLASS Enfermedad Aortoiliaca (EAO) y Enfermedad Femoropolitea</td></tr>
-      <tr class="section"><td colspan="2">Moderador: Dr. Pierre Galvagni, Brasil y Dr. Mariano Castelli, Argentina</td></tr>
-      <tr>
-        <td class="time">08:00 – 08:06</td>
-        <td>Resultados de CERAB en EAO - Dr. Andrés Marin, Republica Dominicana</td>
-      </tr>
-      <tr>
-        <td class="time">08:07 – 08:13</td>
-        <td>Acceso Radial para casos de EAO - Dr. Samuel Fernandez, Argentina</td>
-      </tr>
-      <tr>
-        <td class="time">08:14 – 08:20</td>
-        <td>Endoconductos hasta la femoral comun, Resultados a largo plazo, como y cuando - Dr. Carlos Timaran, Estados Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">08:21 – 08:27</td>
-        <td>El campo de Batalla Femoropopliteo Estrategias en enfermedad compleja - Dra. Elsa Rollan, República Dominicana</td>
-      </tr>
-      <tr>
-        <td class="time">08:28 – 08:34</td>
-        <td>Escogencia de Stents para AFS, Eluvia,Zilver ,Viabahn - Dr. Gabriel Castro, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">08:35 – 08:41</td>
-        <td>Experiencia inicial con bypass femoropopliteo percutaneo - Dr. Khalil Chamseddin, Estados Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">08:42 – 08:48</td>
-        <td>Acceso retrogrado arteria poplitea - Dr. Alberto Pérez Baquero, República Dominicana</td>
-      </tr>
-      <tr>
-        <td class="time">08:49 – 08:53</td>
-        <td>Experiencia con Arterialization Venosa totalmente percutanea - Dr. Michael Siah, Estado Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">08:54 – 09:02</td>
-        <td>Manejo totalmente endovascular de isquemia arterial aguda en miembros inferiores , nuevo standard? - Dr. Nikolaos Konstatinou, Alemania</td>
-      </tr>
-      <tr>
-        <td class="time">09:03 – 09:09</td>
-        <td>Evidencia actual studio SWEDEPAD sobre balones recubiertos con paclitaxel - Dr. Enrique M. San Norberto García, España</td>
-      </tr>
-      <tr>
-        <td class="time">09:10 – 09:16</td>
-        <td>AngioJet-Based Pharmacomechanical Thrombectomy versus Catheter-Directed Thrombolysis for Acute Lower Limb Ischemia: An Updated Systematic Review and Meta-analysis - Dr. Dario Madera, Uruguay</td>
-      </tr>
-      <tr>
-        <td class="time">09:16– 09:30</td>
-        <td>Discusion</td>
-      </tr>
-      <tr>
-        <td class="time">09:31 – 09:45</td>
-        <td>Symposio Cordis: Resultados SELUTION para angioplastia SFA con Sirolimus - Dr. Jorge Fernández Noya, España</td>
-      </tr>
-      <tr>
-        <td class="time">09:46 – 10:00</td>
-        <td>Coffe break visita a stands</td>
-      </tr>
-      <tr class="section"><td colspan="2">Sesion III MASTER CLASS Vasos Tibiales</td></tr>
-      <tr class="section"><td colspan="2">Moderador: Dr. Rafael Franklin Narcizo, Brasil y Dr. José Ramón March García, España</td></tr>
-      <tr>
-        <td class="time">10:01 – 10:07</td>
-        <td>Litotripsia infrapatellar la solucion para el calcio? - Dr. Michael Siah, Estados Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">10:08 – 10:14</td>
-        <td>Angioplastia de arco plantar cuando y como - Dr. Jesús Porras, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">10:15 – 10:21</td>
-        <td>Arterializacion venosa(AV) hybrida desde vaso tibial - Dra. Dyana Calderón, Costa Rica (virtual grabada)</td>
-      </tr>
-      <tr>
-        <td class="time">10:22 – 10:28</td>
-        <td>Aterectomía orbital de vasos tibiales y arco plantar cuando y como - Dr. Mariano Palena, Italia (Virtual grabado)</td>
-      </tr>
-      <tr>
-        <td class="time">10:29 – 10:35</td>
-        <td>Bypass popliteos infrapatelares - Dr. Luis Figueroa, Canadá</td>
-      </tr>
-      <tr>
-        <td class="time">10:36 – 10:42</td>
-        <td>Tips and tricks de Acceso venas plantares /marginales en AV - Dr. Michael Siah, Estados Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">10:43 – 10: 49</td>
-        <td>Clasificacion Glass de que nos sirve ? Dr. José Ramón March García, España</td>
-      </tr>
-      <tr>
-        <td class="time">10:50 – 10:56</td>
-        <td>Acceso retrogrados guiadas por ultrasonido - Dr. Rafael Narcizo, Brasil</td>
-      </tr>
-      <tr>
-        <td class="time">10:57 – 11:10</td>
-        <td>Discusion</td>
-      </tr>
-      <tr>
-        <td class="time">11:11 – 11:25</td>
-        <td>Symposio Penumbra: Conferencista Dr. Cristiano Torres, Brasil / Discusión Dr.Pierre Galgvani, Brasil y Dr. Rafael Narcizo, Brasil (10 min charla - 5 min discusion)</td>
-      </tr>
-      <tr class="section"><td colspan="2">Sesion IV: CVHH</td></tr>
-      <tr class="section"><td colspan="2">Moderador: Dr. Gaudencio Espinosa, Brasil y Enrique M. San Norberto García, España y Dr. Pierre Galvagni, Brasil</td></tr>
-      <tr>
-        <td class="time">11:26 - 11:32</td>
-        <td>Plataformas endovasculares para el tratamiento de los aneurismas ilíacos - Dr. Pierre Galvagni, Brasil</td>
-      </tr>
-      <tr>
-        <td class="time">11:33 – 11:39</td>
-        <td>Como preservamos la arteria hipogástrica en los aneurismas aorto-iliacos? - Dr. Jorge Fernandez Noya, España</td>
-      </tr>
-      <tr>
-        <td class="time">11:40 - 11: 46</td>
-        <td>Tratamiento de aneurismas de aorta torácica con cuello distal corto por vía transaxilar y endoanclas - Dr. Gaudencio Espinosa, Brasil</td>
-      </tr>
-      <tr>
-        <td class="time">11:47 – 11:53</td>
-        <td>Revisión de experiencia con prótesis ramificadas en disecciones tipo B - Dr. Fernando Bautista Sánchez, Perú</td>
-      </tr>
-      <tr>
-        <td class="time">11:54 – 12:00</td>
-        <td>Necesidades no satisfechas en cirugía endovascular de la aorta: perspectivas futuras - Dr. Vicente Riambau, España (virtual grabado)</td>
-      </tr>
-      <tr>
-        <td class="time">12:01 – 12:07</td>
-        <td>Procedimientos híbridos en disección aórtica aguda tipo DeBakey 1 - Dr. Lukasz Dzieciuchowicz, Polonia</td>
-      </tr>
-      <tr>
-        <td class="time">12:08 – 12:14</td>
-        <td>Dispositivo ramificado ilíaco en la práctica real - Dr. Juan Barrera Carvajal, Colombia</td>
-      </tr>
-      <tr>
-        <td class="time">12:15 – 12:21</td>
-        <td>Papel del cirujano vascular en el trasplante renal - Dr. Manuel Miralles, España</td>
-      </tr>
-      <tr>
-        <td class="time">12:22 – 12:28</td>
-        <td>Manejo de compresión venosa por cancer - Dr. Michel Bergoing, Chile</td>
-      </tr>
-      <tr>
-        <td class="time">12:29 – 12:35</td>
-        <td>Recanalización venosa iliaco-cava: tips and tricks - Dr. Francisco Vargas,Chile</td>
-      </tr>
-      <tr>
-        <td class="time">12:36 – 12:42</td>
-        <td>Trombectomía percutánea en tromboembolismo pulmonar: experiencia con trombectomia mecanica - Dr. Moisés Garib Ogando, República Dominicana</td>
-      </tr>
-      <tr>
-        <td class="time">12:43 – 12:49</td>
-        <td>Retos en el tratamiento de aneurismas viscerales - Dr. Sergio Benitez Palacio, México</td>
-      </tr>
-      <tr>
-        <td class="time">12:50 – 12:56</td>
-        <td>Red de intercambio de especialistas vasculares CVHH: becas y oportunidades, Congreso CVHH Valencia 2027 - Dr. Manuel Miralles, España</td>
-      </tr>
-      <tr>
-        <td class="time">12:57 – 13:10</td>
-        <td>Discusion</td>
-      </tr>
-      <tr>
-        <td class="time">13:11 – 14:10</td>
-        <td>Almuerzo y visita a stands</td>
-      </tr>
-      <tr class="section"><td colspan="2">Sesion V: MASTER CLASS Trauma Vascular</td></tr>
-      <tr class="section"><td colspan="2">Moderador: Dr. Manuel García, Estado Unidos y Dr. Luis Fernando Cruz, Costa Rica</td></tr>
-      <tr>
-        <td class="time">14:10 – 14:16</td>
-        <td>Manejo endovascular de trauma axilo-subclavio - Dr. Manuel García-Toca, Estados Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">14:17 – 14:23</td>
-        <td>Clinical and Epidemiological Profile of Peripheral Vascular Trauma in a Public Hospital in Uruguay - Dra. Eliana Suarez, Uruguay</td>
-      </tr>
-      <tr>
-        <td class="time">14:24 – 14:30</td>
-        <td>Shunt femoro-distal para evaluar revascularizacion post-trauma - Dr. Samuel Fernández, Argentina</td>
-      </tr>
-      <tr>
-        <td class="time">14:31 – 14:37</td>
-        <td>Lecciones aprendidas en Trauma Vascular Cervical - Dr. Manuel Garcia-Toca, Estado Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">14:38 – 14:44</td>
-        <td>Manejo Endovascular de lesion traumatica de vena cava suprahepatica - Dr. Lourdes Herrera, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">14:45 – 14:51</td>
-        <td>Manejo endovascular Trauma Aortico Cerrado, Del sizing al timming - Dr. Luis Cruz, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">14:52 – 15:17</td>
-        <td>Discusion</td>
-      </tr>
-      <tr class="section"><td colspan="2">Sesión VI: MASTER CLASS Hemodialiss y accesos vascular</td></tr>
-      <tr class="section"><td colspan="2">Moderado Dra. Vanessa Rubio, México y Dr. William Daza, Colombia</td></tr>
-      <tr>
-        <td class="time">15:18 – 15:24</td>
-        <td>HeRO Graft: rescate del acceso vascular en escenarios complejos - Dr. William Daza, Colombia</td>
-      </tr>
-      <tr>
-        <td class="time">15:25 – 15:31</td>
-        <td>Manejo de Sindrome de Vena cava superior - Dr. Vanessa Rubio, México</td>
-      </tr>
-      <tr>
-        <td class="time">15:32 – 15:38</td>
-        <td>PICC Lines in Oncology Patients: Indications and Best Practices - Dra. Karol Villalobos, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">15:39 – 15:45</td>
-        <td>WRAPSODY en fístulas disfuncionales: innovación para preservar el acceso - Dr. William Daza, Colombia</td>
-      </tr>
-      <tr>
-        <td class="time">15:46 – 16:52</td>
-        <td>Tips and Tricks de angioplastias venosas centrales - Dr. Oscar Ojeda, Ecuador</td>
-      </tr>
-      <tr>
-        <td class="time">15:53 – 15:59</td>
-        <td>Surfacer en oclusión venosa central compleja: una solución de recanalización avanzada - Dr. William Daza, Colombia</td>
-      </tr>
-      <tr>
-        <td class="time">16:00 – 16:14</td>
-        <td>Discusion</td>
-      </tr>
-      <tr>
-        <td class="time">16:15 – 16:30</td>
-        <td>Coffe break visita a stands</td>
-      </tr>
-      <tr class="section"><td colspan="2">Sesion VII: MASTER CLASS Carotida</td></tr>
-      <tr class="section"><td colspan="2">Moderador: Dr. Erben Young, Estados Unidos, Dr. Alberto Muñoz, Colombia y Dr. Andres Marin, Republica Dominicana</td></tr>
-      <tr>
-        <td class="time">16:31 – 16:37</td>
-        <td>Que nos dejo el CREST II , puntos clave para la practica clinica - Dr. Erben Young, Estados Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">16:38 – 16:44</td>
-        <td>Acceso Radial para stenting carotideo - Dr. Samuel Fernández, Argentina</td>
-      </tr>
-      <tr>
-        <td class="time">16:45 – 16:51</td>
-        <td>Abordaje abierto y endovascular de aneurisma carotídeo - Dr. Alberto Muñoz, Colombia</td>
-      </tr>
-      <tr>
-        <td class="time">16:52 – 16:57</td>
-        <td>TCAR vs endarterectomia Carotidea,Estado Actual - Dr. Andrés Marin, Republica Dominicana</td>
-      </tr>
-      <tr>
-        <td class="time">16:58 – 17:04</td>
-        <td>Tratamiento de enfermedad carotidea en el futuro - Dr. Erben Young, Estados Unidos</td>
-      </tr>
-      <tr>
-        <td class="time">17:05 – 17:20</td>
-        <td>Discussion</td>
-      </tr>
-      <tr class="section"><td colspan="2">Sesion VIII: MASTER CLASS Curacion de Herida y Pie Diabetico Avanzado</td></tr>
-      <tr class="section"><td colspan="2">Moderador: Dr. Gabriel Castro, Costa Rica y Dr. Javier Cabezas, Costa Rica</td></tr>
-      <tr>
-        <td class="time">17:21 – 17:27</td>
-        <td>Toe and Flow Resultados de implementación del modelo - Dr. Juan Carlos Alvarado, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">17:28 – 17:34</td>
-        <td>Octenidina en la práctica clínica: optimización del manejo de heridas - Dr. Patrick Saliba, España</td>
-      </tr>
-      <tr>
-        <td class="time">17:35 – 17:41</td>
-        <td>Cuando el Indice Tobillo Brazo no es suficiente? Como evaluar la circulación y la capacidad de cicatrización en los pies de pacientes diabéticos - Dr. Gabriel Castro, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">17:42 – 17:48</td>
-        <td>Importancia de la higienede la herida para el manejo de heridas de dificil cicatrizacion - Dr. Cristina Lopez, México</td>
-      </tr>
-      <tr>
-        <td class="time">17:49 – 17:55</td>
-        <td>Alteraciones en la cicatrizacion celular del pie diabetico - Dr. Aaron Villalobos, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">17:56 – 18:02</td>
-        <td>Eficacia de la tecnologia Hydrofiber y agente antibiofilm en pie diabetico - Dr. Cristina Lopez, México</td>
-      </tr>
-      <tr>
-        <td class="time">18:03 – 18:09</td>
-        <td>Use of Integra Dermal Regeneration Template for Limb Salvage in Diabetic Patients With No-Option Critical Limb Ischemia - Dr.Dyana Calderón, Costa Rica (virtual grabada)</td>
-      </tr>
-      <tr>
-        <td class="time">18:10 – 18:16</td>
-        <td>Pie de Charcot y Osteomielitis, una frecuente confusión diagnóstica. Como identificar cuando es pie de charcot y el impacto del off-loading - Dr. Javier A. Serralde, México</td>
-      </tr>
-      <tr>
-        <td class="time">18:17 – 18:23</td>
-        <td>Intervencion de apositos en la cicatrizacion: de la inflamacion a la cicatrizacion - Dr. Aaron Villalobos, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">18:24 - 18:30</td>
-        <td>Fijacion externa y Tenectomia percutanea para manejo pie diabetico - Dr.Dyana Calderón, Costa Rica (virtual grabada)</td>
-      </tr>
-      <tr>
-        <td class="time">18:31 – 18:37</td>
-        <td>Experiencia inicial con Injertos en sello para lesiones plantares en pie diabetico - Dr. Luis Retana, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">18:38 – 18:45</td>
-        <td>Descargas plantares provisionales y órtesis digitales y como auyudan en el manejo y cicatrizacion de heridas en pie diabetico - Dr. Andrea Alvarez, Costa Rica</td>
-      </tr>
-      <tr>
-        <td class="time">18:46 – 19:00</td>
-        <td>Discusion</td>
-      </tr>
-    </tbody>
-  </table>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Programa — Miércoles 29 de Abril 2026</h1>
+      <p>Sala REAL 1 · Ajuste sobre la versión previamente trabajada, manteniendo estilo visual y espacio para fotos de conferencistas.</p>
+    </section>
+    <table>
+      <thead><tr><th>Hora</th><th>Actividad</th></tr></thead>
+      <tbody>
+        <tr class="section"><td colspan="2">Miércoles 29 de Abril 2026</td></tr>
+        <tr class="section"><td colspan="2">Sesión I: Apertura Congreso</td></tr>
+        <tr class="section"><td colspan="2">Moderador: Dr. Pierre Galvagni, Brasil y Dr.Jesus Porras, Costa Rica</td></tr>
+        <tr>
+          <td class="time">07:40 – 07:45</td>
+          <td class="activity">
+            <div class="talk-title">Historia de la cirugía vascular en Costa Rica y el futuro</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/gabriel-castro.jpg" alt="Gabriel Castro" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">GC</span>
+              <div class="speaker-meta">Dr. Gabriel Castro, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">07:46 – 07:51</td>
+          <td class="activity">
+            <div class="talk-title">Estados actual de la medicina y cirugia en costa rica</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/eliott-garita.jpg" alt="Eliott Garita" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">EG</span>
+              <div class="speaker-meta">Dr. Eliott Garita, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">07:52 – 07:57</td>
+          <td class="activity">
+            <div class="talk-title">Apertura Congreso ,Presente y futuro de CELA</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/pierre-galvagni.jpg" alt="Pierre Galvagni" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">PG</span>
+              <div class="speaker-meta">Dr. Pierre Galvagni, Brasil</div>
+            </div>
+          </td>
+        </tr>
+        <tr class="section"><td colspan="2">Sesión II: MASTER CLASS Enfermedad Aortoiliaca (EAO) y Enfermedad Femoropolitea</td></tr>
+        <tr class="section"><td colspan="2">Moderador: Dr. Pierre Galvagni, Brasil y Dr. Mariano Castelli, Argentina</td></tr>
+        <tr>
+          <td class="time">08:00 – 08:06</td>
+          <td class="activity">
+            <div class="talk-title">Resultados de CERAB en EAO</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/andres-marin.jpg" alt="Andrés Marin" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">AM</span>
+              <div class="speaker-meta">Dr. Andrés Marin, Republica Dominicana</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:07 – 08:13</td>
+          <td class="activity">
+            <div class="talk-title">Acceso Radial para casos de EAO</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/samuel-fernandez.jpg" alt="Samuel Fernandez" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">SF</span>
+              <div class="speaker-meta">Dr. Samuel Fernandez, Argentina</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:14 – 08:20</td>
+          <td class="activity">
+            <div class="talk-title">Endoconductos hasta la femoral comun, Resultados a largo plazo, como y cuando</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/carlos-timaran.jpg" alt="Carlos Timaran" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">CT</span>
+              <div class="speaker-meta">Dr. Carlos Timaran, Estados Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:21 – 08:27</td>
+          <td class="activity">
+            <div class="talk-title">El campo de Batalla Femoropopliteo Estrategias en enfermedad compleja</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/elsa-rollan.jpg" alt="Elsa Rollan" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">ER</span>
+              <div class="speaker-meta">Dra. Elsa Rollan, República Dominicana</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:28 – 08:34</td>
+          <td class="activity">
+            <div class="talk-title">Escogencia de Stents para AFS, Eluvia,Zilver ,Viabahn</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/gabriel-castro.jpg" alt="Gabriel Castro" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">GC</span>
+              <div class="speaker-meta">Dr. Gabriel Castro, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:35 – 08:41</td>
+          <td class="activity">
+            <div class="talk-title">Experiencia inicial con bypass femoropopliteo percutaneo</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/khalil-chamseddin.jpg" alt="Khalil Chamseddin" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">KC</span>
+              <div class="speaker-meta">Dr. Khalil Chamseddin, Estados Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:42 – 08:48</td>
+          <td class="activity">
+            <div class="talk-title">Acceso retrogrado arteria poplitea</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/alberto-perez-baquero.jpg" alt="Alberto Pérez Baquero" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">AP</span>
+              <div class="speaker-meta">Dr. Alberto Pérez Baquero, República Dominicana</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:49 – 08:53</td>
+          <td class="activity">
+            <div class="talk-title">Experiencia con Arterialization Venosa totalmente percutanea</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/michael-siah.jpg" alt="Michael Siah" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MS</span>
+              <div class="speaker-meta">Dr. Michael Siah, Estado Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">08:54 – 09:02</td>
+          <td class="activity">
+            <div class="talk-title">Manejo totalmente endovascular de isquemia arterial aguda en miembros inferiores , nuevo standard?</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/nikolaos-konstatinou.jpg" alt="Nikolaos Konstatinou" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">NK</span>
+              <div class="speaker-meta">Dr. Nikolaos Konstatinou, Alemania</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">09:03 – 09:09</td>
+          <td class="activity">
+            <div class="talk-title">Evidencia actual studio SWEDEPAD sobre balones recubiertos con paclitaxel</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/enrique-m-san-norberto-garcia.jpg" alt="Enrique M. San Norberto García" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">EM</span>
+              <div class="speaker-meta">Dr. Enrique M. San Norberto García, España</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">09:10 – 09:16</td>
+          <td class="activity">
+            <div class="talk-title">AngioJet-Based Pharmacomechanical Thrombectomy versus Catheter-Directed Thrombolysis for Acute Lower Limb Ischemia: An Updated Systematic Review and Meta-analysis</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/dario-madera.jpg" alt="Dario Madera" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">DM</span>
+              <div class="speaker-meta">Dr. Dario Madera, Uruguay</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">09:16– 09:30</td>
+          <td class="activity">
+            <div class="talk-title">Discusion</div>
+            <div>Discusion</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">09:31 – 09:45</td>
+          <td class="activity">
+            <div class="talk-title">Symposio Cordis: Resultados SELUTION para angioplastia SFA con Sirolimus</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/jorge-fernandez-noya.jpg" alt="Jorge Fernández Noya" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">JF</span>
+              <div class="speaker-meta">Dr. Jorge Fernández Noya, España</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">09:46 – 10:00</td>
+          <td class="activity">
+            <div class="talk-title">Coffe break visita a stands</div>
+            <div>Coffe break visita a stands</div>
+          </td>
+        </tr>
+        <tr class="section"><td colspan="2">Sesion III MASTER CLASS Vasos Tibiales</td></tr>
+        <tr class="section"><td colspan="2">Moderador: Dr. Rafael Franklin Narcizo, Brasil y Dr. José Ramón March García, España</td></tr>
+        <tr>
+          <td class="time">10:01 – 10:07</td>
+          <td class="activity">
+            <div class="talk-title">Litotripsia infrapatellar la solucion para el calcio?</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/michael-siah.jpg" alt="Michael Siah" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MS</span>
+              <div class="speaker-meta">Dr. Michael Siah, Estados Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:08 – 10:14</td>
+          <td class="activity">
+            <div class="talk-title">Angioplastia de arco plantar cuando y como</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/jesus-porras.jpg" alt="Jesús Porras" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">JP</span>
+              <div class="speaker-meta">Dr. Jesús Porras, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:15 – 10:21</td>
+          <td class="activity">
+            <div class="talk-title">Arterializacion venosa(AV) hybrida desde vaso tibial</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/dyana-calderon.jpg" alt="Dyana Calderón" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">DC</span>
+              <div class="speaker-meta">Dra. Dyana Calderón, Costa Rica (virtual grabada)</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:22 – 10:28</td>
+          <td class="activity">
+            <div class="talk-title">Aterectomía orbital de vasos tibiales y arco plantar cuando y como</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/mariano-palena.jpg" alt="Mariano Palena" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MP</span>
+              <div class="speaker-meta">Dr. Mariano Palena, Italia (Virtual grabado)</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:29 – 10:35</td>
+          <td class="activity">
+            <div class="talk-title">Bypass popliteos infrapatelares</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/luis-figueroa.jpg" alt="Luis Figueroa" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">LF</span>
+              <div class="speaker-meta">Dr. Luis Figueroa, Canadá</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:36 – 10:42</td>
+          <td class="activity">
+            <div class="talk-title">Tips and tricks de Acceso venas plantares /marginales en AV</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/michael-siah.jpg" alt="Michael Siah" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MS</span>
+              <div class="speaker-meta">Dr. Michael Siah, Estados Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:43 – 10: 49</td>
+          <td class="activity">
+            <div class="talk-title">Clasificacion Glass de que nos sirve ? Dr. José Ramón March García, España</div>
+            <div>Clasificacion Glass de que nos sirve ? Dr. José Ramón March García, España</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:50 – 10:56</td>
+          <td class="activity">
+            <div class="talk-title">Acceso retrogrados guiadas por ultrasonido</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/rafael-narcizo.jpg" alt="Rafael Narcizo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">RN</span>
+              <div class="speaker-meta">Dr. Rafael Narcizo, Brasil</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:57 – 11:10</td>
+          <td class="activity">
+            <div class="talk-title">Discusion</div>
+            <div>Discusion</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">11:11 – 11:25</td>
+          <td class="activity">
+            <div class="talk-title">Symposio Penumbra: Conferencista Dr. Cristiano Torres, Brasil / Discusión Dr.Pierre Galgvani, Brasil y Dr. Rafael Narcizo, Brasil (10 min charla - 5 min discusion)</div>
+            <div>Symposio Penumbra: Conferencista Dr. Cristiano Torres, Brasil / Discusión Dr.Pierre Galgvani, Brasil y Dr. Rafael Narcizo, Brasil (10 min charla - 5 min discusion)</div>
+          </td>
+        </tr>
+        <tr class="section"><td colspan="2">Sesion IV: CVHH</td></tr>
+        <tr class="section"><td colspan="2">Moderador: Dr. Gaudencio Espinosa, Brasil y Enrique M. San Norberto García, España y Dr. Pierre Galvagni, Brasil</td></tr>
+        <tr>
+          <td class="time">11:26 - 11:32</td>
+          <td class="activity">
+            <div class="talk-title">Plataformas endovasculares para el tratamiento de los aneurismas ilíacos</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/pierre-galvagni.jpg" alt="Pierre Galvagni" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">PG</span>
+              <div class="speaker-meta">Dr. Pierre Galvagni, Brasil</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">11:33 – 11:39</td>
+          <td class="activity">
+            <div class="talk-title">Como preservamos la arteria hipogástrica en los aneurismas aorto-iliacos?</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/jorge-fernandez-noya.jpg" alt="Jorge Fernandez Noya" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">JF</span>
+              <div class="speaker-meta">Dr. Jorge Fernandez Noya, España</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">11:40 - 11: 46</td>
+          <td class="activity">
+            <div class="talk-title">Tratamiento de aneurismas de aorta torácica con cuello distal corto por vía transaxilar y endoanclas</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/gaudencio-espinosa.jpg" alt="Gaudencio Espinosa" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">GE</span>
+              <div class="speaker-meta">Dr. Gaudencio Espinosa, Brasil</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">11:47 – 11:53</td>
+          <td class="activity">
+            <div class="talk-title">Revisión de experiencia con prótesis ramificadas en disecciones tipo B</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/fernando-bautista-sanchez.jpg" alt="Fernando Bautista Sánchez" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">FB</span>
+              <div class="speaker-meta">Dr. Fernando Bautista Sánchez, Perú</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">11:54 – 12:00</td>
+          <td class="activity">
+            <div class="talk-title">Necesidades no satisfechas en cirugía endovascular de la aorta: perspectivas futuras</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/vicente-riambau.jpg" alt="Vicente Riambau" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">VR</span>
+              <div class="speaker-meta">Dr. Vicente Riambau, España (virtual grabado)</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:01 – 12:07</td>
+          <td class="activity">
+            <div class="talk-title">Procedimientos híbridos en disección aórtica aguda tipo DeBakey 1</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/lukasz-dzieciuchowicz.jpg" alt="Lukasz Dzieciuchowicz" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">LD</span>
+              <div class="speaker-meta">Dr. Lukasz Dzieciuchowicz, Polonia</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:08 – 12:14</td>
+          <td class="activity">
+            <div class="talk-title">Dispositivo ramificado ilíaco en la práctica real</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/juan-barrera-carvajal.jpg" alt="Juan Barrera Carvajal" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">JB</span>
+              <div class="speaker-meta">Dr. Juan Barrera Carvajal, Colombia</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:15 – 12:21</td>
+          <td class="activity">
+            <div class="talk-title">Papel del cirujano vascular en el trasplante renal</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/manuel-miralles.jpg" alt="Manuel Miralles" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MM</span>
+              <div class="speaker-meta">Dr. Manuel Miralles, España</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:22 – 12:28</td>
+          <td class="activity">
+            <div class="talk-title">Manejo de compresión venosa por cancer</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/michel-bergoing.jpg" alt="Michel Bergoing" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MB</span>
+              <div class="speaker-meta">Dr. Michel Bergoing, Chile</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:29 – 12:35</td>
+          <td class="activity">
+            <div class="talk-title">Recanalización venosa iliaco-cava: tips and tricks</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/francisco-vargas.jpg" alt="Francisco Vargas" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">FV</span>
+              <div class="speaker-meta">Dr. Francisco Vargas,Chile</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:36 – 12:42</td>
+          <td class="activity">
+            <div class="talk-title">Trombectomía percutánea en tromboembolismo pulmonar: experiencia con trombectomia mecanica</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/moises-garib-ogando.jpg" alt="Moisés Garib Ogando" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MG</span>
+              <div class="speaker-meta">Dr. Moisés Garib Ogando, República Dominicana</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:43 – 12:49</td>
+          <td class="activity">
+            <div class="talk-title">Retos en el tratamiento de aneurismas viscerales</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/sergio-benitez-palacio.jpg" alt="Sergio Benitez Palacio" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">SB</span>
+              <div class="speaker-meta">Dr. Sergio Benitez Palacio, México</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:50 – 12:56</td>
+          <td class="activity">
+            <div class="talk-title">Red de intercambio de especialistas vasculares CVHH: becas y oportunidades, Congreso CVHH Valencia 2027</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/manuel-miralles.jpg" alt="Manuel Miralles" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MM</span>
+              <div class="speaker-meta">Dr. Manuel Miralles, España</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:57 – 13:10</td>
+          <td class="activity">
+            <div class="talk-title">Discusion</div>
+            <div>Discusion</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">13:11 – 14:10</td>
+          <td class="activity">
+            <div class="talk-title">Almuerzo y visita a stands</div>
+            <div>Almuerzo y visita a stands</div>
+          </td>
+        </tr>
+        <tr class="section"><td colspan="2">Sesion V: MASTER CLASS Trauma Vascular</td></tr>
+        <tr class="section"><td colspan="2">Moderador: Dr. Manuel García, Estado Unidos y Dr. Luis Fernando Cruz, Costa Rica</td></tr>
+        <tr>
+          <td class="time">14:10 – 14:16</td>
+          <td class="activity">
+            <div class="talk-title">Manejo endovascular de trauma axilo-subclavio</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/manuel-garcia-toca.jpg" alt="Manuel García-Toca" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MG</span>
+              <div class="speaker-meta">Dr. Manuel García-Toca, Estados Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:17 – 14:23</td>
+          <td class="activity">
+            <div class="talk-title">Clinical and Epidemiological Profile of Peripheral Vascular Trauma in a Public Hospital in Uruguay</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/eliana-suarez.jpg" alt="Eliana Suarez" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">ES</span>
+              <div class="speaker-meta">Dra. Eliana Suarez, Uruguay</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:24 – 14:30</td>
+          <td class="activity">
+            <div class="talk-title">Shunt femoro-distal para evaluar revascularizacion post-trauma</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/samuel-fernandez.jpg" alt="Samuel Fernández" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">SF</span>
+              <div class="speaker-meta">Dr. Samuel Fernández, Argentina</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:31 – 14:37</td>
+          <td class="activity">
+            <div class="talk-title">Lecciones aprendidas en Trauma Vascular Cervical</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/manuel-garcia-toca.jpg" alt="Manuel Garcia-Toca" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">MG</span>
+              <div class="speaker-meta">Dr. Manuel Garcia-Toca, Estado Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:38 – 14:44</td>
+          <td class="activity">
+            <div class="talk-title">Manejo Endovascular de lesion traumatica de vena cava suprahepatica</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/lourdes-herrera.jpg" alt="Lourdes Herrera" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">LH</span>
+              <div class="speaker-meta">Dr. Lourdes Herrera, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:45 – 14:51</td>
+          <td class="activity">
+            <div class="talk-title">Manejo endovascular Trauma Aortico Cerrado, Del sizing al timming</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/luis-cruz.jpg" alt="Luis Cruz" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">LC</span>
+              <div class="speaker-meta">Dr. Luis Cruz, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:52 – 15:17</td>
+          <td class="activity">
+            <div class="talk-title">Discusion</div>
+            <div>Discusion</div>
+          </td>
+        </tr>
+        <tr class="section"><td colspan="2">Sesión VI: MASTER CLASS Hemodialiss y accesos vascular</td></tr>
+        <tr class="section"><td colspan="2">Moderado Dra. Vanessa Rubio, México y Dr. William Daza, Colombia</td></tr>
+        <tr>
+          <td class="time">15:18 – 15:24</td>
+          <td class="activity">
+            <div class="talk-title">HeRO Graft: rescate del acceso vascular en escenarios complejos</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/william-daza.jpg" alt="William Daza" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">WD</span>
+              <div class="speaker-meta">Dr. William Daza, Colombia</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">15:25 – 15:31</td>
+          <td class="activity">
+            <div class="talk-title">Manejo de Sindrome de Vena cava superior</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/vanessa-rubio.jpg" alt="Vanessa Rubio" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">VR</span>
+              <div class="speaker-meta">Dr. Vanessa Rubio, México</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">15:32 – 15:38</td>
+          <td class="activity">
+            <div class="talk-title">PICC Lines in Oncology Patients: Indications and Best Practices</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/karol-villalobos.jpg" alt="Karol Villalobos" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">KV</span>
+              <div class="speaker-meta">Dra. Karol Villalobos, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">15:39 – 15:45</td>
+          <td class="activity">
+            <div class="talk-title">WRAPSODY en fístulas disfuncionales: innovación para preservar el acceso</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/william-daza.jpg" alt="William Daza" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">WD</span>
+              <div class="speaker-meta">Dr. William Daza, Colombia</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">15:46 – 16:52</td>
+          <td class="activity">
+            <div class="talk-title">Tips and Tricks de angioplastias venosas centrales</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/oscar-ojeda.jpg" alt="Oscar Ojeda" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">OO</span>
+              <div class="speaker-meta">Dr. Oscar Ojeda, Ecuador</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">15:53 – 15:59</td>
+          <td class="activity">
+            <div class="talk-title">Surfacer en oclusión venosa central compleja: una solución de recanalización avanzada</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/william-daza.jpg" alt="William Daza" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">WD</span>
+              <div class="speaker-meta">Dr. William Daza, Colombia</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">16:00 – 16:14</td>
+          <td class="activity">
+            <div class="talk-title">Discusion</div>
+            <div>Discusion</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">16:15 – 16:30</td>
+          <td class="activity">
+            <div class="talk-title">Coffe break visita a stands</div>
+            <div>Coffe break visita a stands</div>
+          </td>
+        </tr>
+        <tr class="section"><td colspan="2">Sesion VII: MASTER CLASS Carotida</td></tr>
+        <tr class="section"><td colspan="2">Moderador: Dr. Erben Young, Estados Unidos, Dr. Alberto Muñoz, Colombia y Dr. Andres Marin, Republica Dominicana</td></tr>
+        <tr>
+          <td class="time">16:31 – 16:37</td>
+          <td class="activity">
+            <div class="talk-title">Que nos dejo el CREST II , puntos clave para la practica clinica</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/erben-young.jpg" alt="Erben Young" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">EY</span>
+              <div class="speaker-meta">Dr. Erben Young, Estados Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">16:38 – 16:44</td>
+          <td class="activity">
+            <div class="talk-title">Acceso Radial para stenting carotideo</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/samuel-fernandez.jpg" alt="Samuel Fernández" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">SF</span>
+              <div class="speaker-meta">Dr. Samuel Fernández, Argentina</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">16:45 – 16:51</td>
+          <td class="activity">
+            <div class="talk-title">Abordaje abierto y endovascular de aneurisma carotídeo</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/alberto-munoz.jpg" alt="Alberto Muñoz" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">AM</span>
+              <div class="speaker-meta">Dr. Alberto Muñoz, Colombia</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">16:52 – 16:57</td>
+          <td class="activity">
+            <div class="talk-title">TCAR vs endarterectomia Carotidea,Estado Actual</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/andres-marin.jpg" alt="Andrés Marin" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">AM</span>
+              <div class="speaker-meta">Dr. Andrés Marin, Republica Dominicana</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">16:58 – 17:04</td>
+          <td class="activity">
+            <div class="talk-title">Tratamiento de enfermedad carotidea en el futuro</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/erben-young.jpg" alt="Erben Young" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">EY</span>
+              <div class="speaker-meta">Dr. Erben Young, Estados Unidos</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">17:05 – 17:20</td>
+          <td class="activity">
+            <div class="talk-title">Discussion</div>
+            <div>Discussion</div>
+          </td>
+        </tr>
+        <tr class="section"><td colspan="2">Sesion VIII: MASTER CLASS Curacion de Herida y Pie Diabetico Avanzado</td></tr>
+        <tr class="section"><td colspan="2">Moderador: Dr. Gabriel Castro, Costa Rica y Dr. Javier Cabezas, Costa Rica</td></tr>
+        <tr>
+          <td class="time">17:21 – 17:27</td>
+          <td class="activity">
+            <div class="talk-title">Toe and Flow Resultados de implementación del modelo</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/juan-carlos-alvarado.jpg" alt="Juan Carlos Alvarado" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">JC</span>
+              <div class="speaker-meta">Dr. Juan Carlos Alvarado, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">17:28 – 17:34</td>
+          <td class="activity">
+            <div class="talk-title">Octenidina en la práctica clínica: optimización del manejo de heridas</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/patrick-saliba.jpg" alt="Patrick Saliba" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">PS</span>
+              <div class="speaker-meta">Dr. Patrick Saliba, España</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">17:35 – 17:41</td>
+          <td class="activity">
+            <div class="talk-title">Cuando el Indice Tobillo Brazo no es suficiente? Como evaluar la circulación y la capacidad de cicatrización en los pies de pacientes diabéticos</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/gabriel-castro.jpg" alt="Gabriel Castro" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">GC</span>
+              <div class="speaker-meta">Dr. Gabriel Castro, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">17:42 – 17:48</td>
+          <td class="activity">
+            <div class="talk-title">Importancia de la higienede la herida para el manejo de heridas de dificil cicatrizacion</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/cristina-lopez.jpg" alt="Cristina Lopez" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">CL</span>
+              <div class="speaker-meta">Dr. Cristina Lopez, México</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">17:49 – 17:55</td>
+          <td class="activity">
+            <div class="talk-title">Alteraciones en la cicatrizacion celular del pie diabetico</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/aaron-villalobos.jpg" alt="Aaron Villalobos" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">AV</span>
+              <div class="speaker-meta">Dr. Aaron Villalobos, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">17:56 – 18:02</td>
+          <td class="activity">
+            <div class="talk-title">Eficacia de la tecnologia Hydrofiber y agente antibiofilm en pie diabetico</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/cristina-lopez.jpg" alt="Cristina Lopez" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">CL</span>
+              <div class="speaker-meta">Dr. Cristina Lopez, México</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:03 – 18:09</td>
+          <td class="activity">
+            <div class="talk-title">Use of Integra Dermal Regeneration Template for Limb Salvage in Diabetic Patients With No-Option Critical Limb Ischemia</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/dyana-calderon.jpg" alt="Dyana Calderón" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">DC</span>
+              <div class="speaker-meta">Dr.Dyana Calderón, Costa Rica (virtual grabada)</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:10 – 18:16</td>
+          <td class="activity">
+            <div class="talk-title">Pie de Charcot y Osteomielitis, una frecuente confusión diagnóstica. Como identificar cuando es pie de charcot y el impacto del off-loading</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/javier-a-serralde.jpg" alt="Javier A. Serralde" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">JA</span>
+              <div class="speaker-meta">Dr. Javier A. Serralde, México</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:17 – 18:23</td>
+          <td class="activity">
+            <div class="talk-title">Intervencion de apositos en la cicatrizacion: de la inflamacion a la cicatrizacion</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/aaron-villalobos.jpg" alt="Aaron Villalobos" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">AV</span>
+              <div class="speaker-meta">Dr. Aaron Villalobos, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:24 - 18:30</td>
+          <td class="activity">
+            <div class="talk-title">Fijacion externa y Tenectomia percutanea para manejo pie diabetico</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/dyana-calderon.jpg" alt="Dyana Calderón" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">DC</span>
+              <div class="speaker-meta">Dr.Dyana Calderón, Costa Rica (virtual grabada)</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:31 – 18:37</td>
+          <td class="activity">
+            <div class="talk-title">Experiencia inicial con Injertos en sello para lesiones plantares en pie diabetico</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/luis-retana.jpg" alt="Luis Retana" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">LR</span>
+              <div class="speaker-meta">Dr. Luis Retana, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:38 – 18:45</td>
+          <td class="activity">
+            <div class="talk-title">Descargas plantares provisionales y órtesis digitales y como auyudan en el manejo y cicatrizacion de heridas en pie diabetico</div>
+            <div class="speaker">
+              <img class="speaker-photo" src="fotos/conferencistas/andrea-alvarez.jpg" alt="Andrea Alvarez" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+              <span class="speaker-fallback" style="display:none">AA</span>
+              <div class="speaker-meta">Dr. Andrea Alvarez, Costa Rica</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:46 – 19:00</td>
+          <td class="activity">
+            <div class="talk-title">Discusion</div>
+            <div>Discusion</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 </body>
 </html>
